@@ -25,16 +25,7 @@ public class Controller implements Initializable {
     public Label pingLB;
     @FXML
     public ComboBox<String> serversCB;
-    @FXML
-    public Pane pane;
-/*
-    NA - ping 104.160.131.3
-    "EUW","104.160.141.3"
-    "EUNE","104.160.142.3"
-    "OCE","104.160.156.1"
-    "LAN","104.160.136.3"
-    "BR","104.160.152.3"
-*/
+
 
     public Controller()
     {
@@ -71,7 +62,6 @@ public class Controller implements Initializable {
         });
         serversCB.getSelectionModel().select(1);
         startPinging(ips.get("EUW"));
-        System.out.println("W : "+pane.getWidth()+"   H: "+pane.getHeight());
     }
 
     private void startPinging(String ip) {
