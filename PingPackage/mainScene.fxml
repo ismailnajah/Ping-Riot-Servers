@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane fx:id="pane" maxHeight="540.0" maxWidth="706.0" minHeight="270.0" minWidth="300.0" prefHeight="540.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PingPackage.Controller">
+<Pane fx:id="pane" maxHeight="540.0" maxWidth="706.0" minHeight="270.0" minWidth="300.0" prefHeight="537.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PingPackage.Controller">
    <children>
-      <AnchorPane layoutX="22.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="663.0">
+      <AnchorPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="705.0">
          <children>
             <ImageView fitHeight="419.0" fitWidth="630.0" layoutX="18.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -33,12 +33,7 @@
                <font>
                   <Font name="System Bold" size="15.0" />
                </font></Label>
-            <Label layoutX="499.0" layoutY="492.0" prefHeight="39.0" prefWidth="185.0" text="developed by ISMAIL NAJAH" textAlignment="CENTER" AnchorPane.bottomAnchor="-17.0">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <BorderPane layoutX="358.0" layoutY="59.0" prefHeight="96.0" prefWidth="271.0" AnchorPane.bottomAnchor="359.0" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="59.0">
+            <BorderPane layoutX="364.0" layoutY="48.0" prefHeight="96.0" prefWidth="271.0" AnchorPane.bottomAnchor="370.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="48.0">
                <center>
                   <Label fx:id="pingLB" alignment="CENTER" contentDisplay="CENTER" prefHeight="97.0" prefWidth="263.0" text="0" textAlignment="CENTER" textFill="#2f941d" BorderPane.alignment="CENTER">
                      <font>
@@ -47,6 +42,7 @@
                   </Label>
                </center>
             </BorderPane>
+            <Hyperlink fx:id="aboutButton" layoutX="9.0" layoutY="3.0" text="About" />
          </children>
       </AnchorPane>
    </children>

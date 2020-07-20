@@ -5,17 +5,24 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.URL;
@@ -25,8 +32,14 @@ import java.util.*;
 public class Controller implements Initializable {
     Hashtable<String,String> ips = new Hashtable<>();
     Timer timer;
+
+    private About about;
+
     @FXML
     public Label pingLB;
+
+    @FXML
+    public Hyperlink aboutButton;
 
     @FXML
     public ComboBox<String> serversCB;
@@ -77,6 +90,12 @@ public class Controller implements Initializable {
         startPinging(ips.get("EUW"));
 
         pingChart.getData().add(series);
+
+
+        //setting up about window
+        about = new About();
+
+        aboutButton.setOnMouseClicked(event -> about.show());
 
     }
 
