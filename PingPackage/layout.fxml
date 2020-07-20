@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="540.0" maxWidth="706.0" minHeight="270.0" minWidth="300.0" prefHeight="540.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PingPackage.Controller">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="663.0">
+         <children>
+            <LineChart fx:id="pingChart" alternativeRowFillVisible="false" axisSortingPolicy="NONE" layoutX="-13.0" layoutY="121.0" prefHeight="379.0" prefWidth="690.0" title="Ping Over Time">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="14.0" prefHeight="45.0" prefWidth="490.0" text="Ping League of Legends Servers" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="serversCB" accessibleText="serverM" layoutX="129.0" layoutY="76.0" prefHeight="30.0" prefWidth="163.0" promptText="Choose Server" visibleRowCount="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="72.0" prefHeight="39.0" prefWidth="71.0" text="Server">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="478.0" layoutY="481.0" prefHeight="39.0" prefWidth="185.0" text="developed by ISMAIL NAJAH" textAlignment="CENTER" AnchorPane.bottomAnchor="-6.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <BorderPane layoutX="377.0" layoutY="54.0" prefHeight="75.0" prefWidth="271.0" AnchorPane.bottomAnchor="384.0" AnchorPane.leftAnchor="377.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="54.0">
+               <center>
+                  <Label fx:id="pingLB" alignment="CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="203.0" text="0" textAlignment="CENTER" textFill="#2f941d" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="59.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
