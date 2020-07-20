@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="540.0" maxWidth="706.0" minHeight="270.0" minWidth="300.0" prefHeight="540.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PingPackage.Controller">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="663.0">
+         <children>
+            <ImageView fitHeight="419.0" fitWidth="630.0" layoutX="18.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/lol.png" />
+               </image>
+            </ImageView>
+            <LineChart fx:id="pingChart" alternativeRowFillVisible="false" axisSortingPolicy="NONE" layoutX="-13.0" layoutY="130.0" opacity="0.8" prefHeight="380.0" prefWidth="690.0" title="Ping Over Time" titleSide="BOTTOM">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="14.0" prefHeight="45.0" prefWidth="411.0" text="Ping Servers" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="serversCB" accessibleText="serverM" layoutX="85.0" layoutY="92.0" prefHeight="30.0" prefWidth="163.0" promptText="Choose Server" visibleRowCount="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="87.0" prefHeight="39.0" prefWidth="71.0" text="Server">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="499.0" layoutY="492.0" prefHeight="39.0" prefWidth="185.0" text="developed by ISMAIL NAJAH" textAlignment="CENTER" AnchorPane.bottomAnchor="-17.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <BorderPane layoutX="358.0" layoutY="59.0" prefHeight="96.0" prefWidth="271.0" AnchorPane.bottomAnchor="359.0" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="59.0">
+               <center>
+                  <Label fx:id="pingLB" alignment="CENTER" contentDisplay="CENTER" prefHeight="97.0" prefWidth="263.0" text="0" textAlignment="CENTER" textFill="#2f941d" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="72.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
