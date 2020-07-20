@@ -13,16 +13,17 @@
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="87.0" layoutY="82.0" prefHeight="34.0" prefWidth="255.0" text="https://github.com/ismailnajah/">
+      <Hyperlink fx:id="githubLink" layoutX="87.0" layoutY="82.0" prefHeight="34.0" prefWidth="255.0" text="https://github.com/ismailnajah/">
          <font>
             <Font size="17.0" />
          </font>
       </Hyperlink>
-      <Label layoutX="164.0" layoutY="141.0" text="© 2020" />
+      <Label layoutX="323.0" layoutY="15.0" text="v1.0.1" />
       <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="34.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Assets/github.png" />
          </image>
       </ImageView>
+      <Label layoutX="164.0" layoutY="138.0" text="© 2020" />
    </children>
 </AnchorPane>
