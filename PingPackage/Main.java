@@ -11,8 +11,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("layout.fxml"));
-        primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("../Assets/icon.png")));
+        Parent root = FXMLLoader.load(getClass().getResource("./layout.fxml"));
+        primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("Assets/icon.png")));
         primaryStage.setTitle("Ping Riot Servers");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
